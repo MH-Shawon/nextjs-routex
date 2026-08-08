@@ -9,3 +9,17 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+
+pnpm-lock.yaml
+out/test/
+src/
+test/
+tests/
+coverage/
+.vscode/
+.git/
+.github/
+*.vsix
+
+out/commands/test/
+out/app/

@@ -10,8 +10,8 @@
   "url": "https://github.com/MH-Shawon/nextjs-routex.git"
 },
   "engines": {
-    "vscode": "^1.125.0"
-  },
+  "vscode": "^1.120.0"
+},
   "categories": [
     "Snippets",
     "Programming Languages"
@@ -60,7 +60,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
-    "@types/vscode": "^1.125.0",
+    "@types/vscode": "^1.120.0",
     "@vscode/test-cli": "^0.0.15",
     "@vscode/test-electron": "^3.0.0",
     "@vscode/vsce": "^3.9.2",
