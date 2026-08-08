@@ -1,9 +1,5 @@
-# Change Log
+## [0.1.1] - 2026-08-08
 
-All notable changes to the "nextjs-routex" extension will be documented in this file.
+### Changed
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- Improved the Next.js `layout.tsx` template.
