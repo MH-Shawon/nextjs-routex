@@ -1,0 +1,67 @@
+{
+  "name": "nextjs-routex",
+  "displayName": "Next RouteX",
+  "description": "Smart Next.js App Router snippets and code generator.",
+  "version": "0.1.0",
+  "publisher": "MH-SHAWON",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Snippets",
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onCommand:nextjs-routex.createRoute",
+    "onCommand:nextjs-routex.createComponent",
+    "onLanguage:typescriptreact",
+    "onLanguage:typescript"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "nextjs-routex.createRoute",
+        "title": "Next RouteX: Create Route"
+      },
+      {
+        "command": "nextjs-routex.createComponent",
+        "title": "Next RouteX: Create Component"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "nextjs-routex.createRoute",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "nextjs-routex.createComponent",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src",
+    "pretest": "pnpm run compile && pnpm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "@types/vscode": "^1.125.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
+    "@vscode/vsce": "^3.9.2",
+    "eslint": "^9.35.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.43.0"
+  }
+}
