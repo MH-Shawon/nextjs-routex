@@ -5,6 +5,10 @@
   "version": "0.1.0",
   "publisher": "MH-SHAWON",
   "license": "MIT",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/MH-Shawon/nextjs-routex.git"
+},
   "engines": {
     "vscode": "^1.125.0"
   },
